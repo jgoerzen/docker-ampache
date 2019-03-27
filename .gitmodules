@@ -1,0 +1,8 @@
+[submodule "ampache"]
+	path = ampache
+	url = git@github.com:jgoerzen/docker-ampache-base.git
+	branch = .
+[submodule "ampache-mysql"]
+	path = ampache-mysql
+	url = git@github.com:jgoerzen/docker-ampache-mysql.git
+	branch = .
