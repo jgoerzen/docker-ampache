@@ -15,11 +15,11 @@ docker-build-master:
     - chmod -R og-w .
     - cd ampache && docker build -t jgoerzen/ampache .
     - cd ../ampache-mysql && docker build -t jgoerzen/ampache-mysql .
-    - docker tag jgoerzen/ampache jgoerzen/ampache:5.6.1
-    - docker tag jgoerzen/ampache-mysql jgoerzen/ampache-mysql:5.6.1
+    - docker tag jgoerzen/ampache jgoerzen/ampache:5.6.2
+    - docker tag jgoerzen/ampache-mysql jgoerzen/ampache-mysql:5.6.2
     - docker push jgoerzen/ampache
-    - docker push jgoerzen/ampache:5.6.1
+    - docker push jgoerzen/ampache:5.6.2
     - docker push jgoerzen/ampache-mysql
-    - docker push jgoerzen/ampache-mysql:5.6.1
+    - docker push jgoerzen/ampache-mysql:5.6.2
   only:
     - master
